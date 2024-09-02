@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hinna Parwez - Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#interests">Interests</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Introduction Section -->
+    <header id="about">
+        <h1>Hi, I'm Hinna Parwez</h1>
+        <p>Computer Science major at the University of Cincinnati. Passionate about coding, problem-solving, and creative solutions.</p>
+    </header>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project-list">
+            <!-- Add your projects here -->
+        </div>
+    </section>
+
+    <!-- Interests Section -->
+    <section id="interests">
+        <h2>Interests</h2>
+        <p>Member of AWOCE, Social Chair, and passionate about coding and creativity.</p>
+        <img src="assets/awoce-logo.png" alt="AWOCE Logo">
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>Email: parwezh@ucmail.uc.edu</p>
+        <p><a href="https://www.linkedin.com/in/hinnaparwez" target="_blank">LinkedIn</a></p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Hinna Parwez</p>
+    </footer>
+</body>
+</html>
