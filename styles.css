@@ -1,25 +1,26 @@
-
 /* General Styles */
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Montserrat', sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
     color: #333;
     line-height: 1.6;
+    background-color: #001f3f;
 }
 
 /* Header Styles */
 header {
     text-align: center;
     padding: 60px 20px;
-    background-color: #004080;
-    color: #fff;
+    background-color: #002d62;
+    color: #ffffff;
 }
 
 header h1 {
-    font-size: 3em;
+    font-size: 3.5em;
     margin: 0 0 20px;
+    font-weight: bold;
 }
 
 header p {
@@ -30,6 +31,7 @@ header p {
 header a {
     color: #ffcc00;
     text-decoration: none;
+    font-weight: bold;
 }
 
 header a:hover {
@@ -39,19 +41,25 @@ header a:hover {
 /* Section Styles */
 section {
     margin: 40px auto;
-    padding: 20px;
+    padding: 30px;
     max-width: 900px;
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
+    background-color: #ffffff;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+section:hover {
+    transform: translateY(-10px);
 }
 
 section h3 {
-    font-size: 1.8em;
-    color: #004080;
-    border-bottom: 2px solid #004080;
+    font-size: 2em;
+    color: #002d62;
+    border-bottom: 2px solid #002d62;
     padding-bottom: 10px;
     margin-bottom: 20px;
+    font-weight: bold;
 }
 
 section p, section ul {
@@ -70,9 +78,10 @@ section ul li {
 /* Contact Section */
 #contact {
     text-align: center;
-    background-color: #004080;
-    color: #fff;
+    background-color: #002d62;
+    color: #ffffff;
     padding: 20px 0;
+    border-radius: 0 0 10px 10px;
 }
 
 #contact p {
@@ -82,6 +91,7 @@ section ul li {
 #contact a {
     color: #ffcc00;
     text-decoration: none;
+    font-weight: bold;
 }
 
 #contact a:hover {
@@ -92,8 +102,8 @@ section ul li {
 footer {
     text-align: center;
     padding: 20px 0;
-    background-color: #333;
-    color: #fff;
+    background-color: #001f3f;
+    color: #ffffff;
     font-size: 0.9em;
 }
 
@@ -104,4 +114,20 @@ footer a {
 
 footer a:hover {
     text-decoration: underline;
+}
+
+/* Additional Styles */
+h2 {
+    font-size: 2.5em;
+    color: #ffcc00;
+    margin-bottom: 20px;
+}
+
+section ul li:before {
+    content: "•";
+    color: #002d62;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
 }
