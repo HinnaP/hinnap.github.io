@@ -3,24 +3,58 @@ body {
     font-family: 'Montserrat', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #faf7f4; /* Off-white background */
+    background-color: #f9f9f9; /* Lightened background */
     color: #0a0a33; /* Dark navy blue text */
     line-height: 1.6;
 }
 
+/* Navigation Styles */
+nav {
+    background-color: #ffffff; /* White background */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #0a0a33; /* Dark navy blue */
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.1em;
+}
+
+nav ul li a:hover {
+    color: #004080; /* Slightly lighter navy */
+}
+
 /* Header Styles */
 header {
-    position: relative;
-    background-color: #0a0a33; /* Dark navy blue */
-    color: #faf7f4; /* Off-white text */
+    background-color: #ffffff; /* White background */
+    color: #0a0a33; /* Dark navy blue text */
     text-align: center;
     padding: 100px 20px;
+    border-bottom: 2px solid #eeeeee; /* Light gray border */
 }
 
 .header-content h1 {
-    font-size: 4em;
+    font-size: 3em;
     margin: 0 0 20px;
     font-weight: bold;
+    color: #004080; /* Slightly lighter navy */
 }
 
 .header-content p {
@@ -33,11 +67,15 @@ section {
     margin: 40px auto;
     padding: 30px;
     max-width: 900px;
-    background-color: #ffffff; /* Pure white */
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff; /* White background */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
     border-radius: 10px;
     transition: transform 0.3s ease-in-out;
     color: #0a0a33; /* Dark navy blue text */
+}
+
+section:nth-of-type(odd) {
+    background-color: #f9f9f9; /* Lightened background for alternating sections */
 }
 
 section:hover {
@@ -46,8 +84,8 @@ section:hover {
 
 section h3 {
     font-size: 2em;
-    color: #0a0a33; /* Dark navy blue */
-    border-bottom: 2px solid #0a0a33; /* Dark navy blue */
+    color: #004080; /* Slightly lighter navy */
+    border-bottom: 2px solid #eeeeee; /* Light gray border */
     padding-bottom: 10px;
     margin-bottom: 20px;
     font-weight: bold;
@@ -64,6 +102,15 @@ section ul {
 
 section ul li {
     margin-bottom: 10px;
+}
+
+/* Card Styles */
+.card {
+    background-color: #ffffff; /* White */
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 /* Contact Section */
