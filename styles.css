@@ -21,40 +21,44 @@ nav {
 nav ul {
     list-style-type: none;
     margin: 0;
-    padding: 10px 0;
+    padding: 0;
     text-align: center;
 }
 
 nav ul li {
-    display: inline;
-    margin: 0 15px;
+    display: inline-block;
+    margin: 10px 20px; /* More space between buttons */
 }
 
 nav ul li a {
-    color: #0a0a33; /* Dark navy blue */
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #0a0a33; /* Dark navy blue button background */
+    color: #ffffff; /* White text */
     text-decoration: none;
     font-weight: 700;
     font-size: 1.1em;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
 }
 
 nav ul li a:hover {
-    color: #004080; /* Slightly lighter navy */
+    background-color: #004080; /* Slightly lighter navy on hover */
+    color: #faf7f4; /* Off-white text on hover */
 }
 
 /* Header Styles */
 header {
-    background-color: #ffffff; /* White background */
-    color: #0a0a33; /* Dark navy blue text */
+    background-color: #0a0a33; /* Dark navy blue background */
+    color: #faf7f4; /* Off-white text */
     text-align: center;
     padding: 100px 20px;
-    border-bottom: 2px solid #eeeeee; /* Light gray border */
 }
 
 .header-content h1 {
     font-size: 3em;
     margin: 0 0 20px;
     font-weight: bold;
-    color: #004080; /* Slightly lighter navy */
 }
 
 .header-content p {
@@ -102,15 +106,6 @@ section ul {
 
 section ul li {
     margin-bottom: 10px;
-}
-
-/* Card Styles */
-.card {
-    background-color: #ffffff; /* White */
-    padding: 20px;
-    margin-bottom: 20px;
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 /* Contact Section */
