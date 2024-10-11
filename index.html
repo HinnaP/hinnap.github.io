@@ -9,7 +9,9 @@
 </head>
 <body>
     <nav>
-        <ul>
+        <!-- Hamburger menu button for mobile -->
+        <button class="hamburger" onclick="toggleMenu()">☰</button>
+        <ul id="nav-menu">
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#experience">Experience</a></li>
@@ -28,92 +30,103 @@
         </div>
     </header>
 
-<section id="about">
-    <h3>About Me</h3>
-    <p>I am a dedicated student with a passion for technology and problem-solving. I enjoy working on both front-end and back-end development, and I am constantly learning new techniques to improve my coding skills. Currently I am working on finishing up some personal Python projects, that I will share here. </p>
-    
-    <hr style="margin: 30px 0;">
+    <!-- About Section -->
+    <section id="about">
+        <h3>About Me</h3>
+        <p>I am a dedicated student with a passion for technology and problem-solving. I enjoy working on both front-end and back-end development, and I am constantly learning new techniques to improve my coding skills. Currently I am working on finishing up some personal Python projects, that I will share here. </p>
+        <hr style="margin: 30px 0;">
+        <p><strong style="font-size: 1.2em; color: #004080;">✨ Available for Co-Op Spring 2025 ✨</strong></p>
+    </section>
 
-    <p><strong style="font-size: 1.2em; color: #004080;">✨ Available for Co-Op Spring 2025 ✨</strong></p>
-</section>
+    <!-- Experience Section -->
+    <section id="experience">
+        <h3>Experience</h3>
+        <div class="card">
+            <h4>Software Intern</h4>
+            <p>Valmonte Digital, (Remote) Los Angeles, CA | April 2024 - August 2024</p>
+            <ul>
+                <li>Analyzed performance data from 5+ paid social and programmatic campaigns using SQL and Python, generating actionable insights that improved campaign efficiency.</li>
+                <li>Developed Python automation scripts for tasks such as bid adjustments and budget reallocation, reducing campaign management time by 8 hours weekly.</li>
+                <li>Created custom Google Data Studio dashboards to visualize key campaign metrics, providing media planners with insights to optimize strategies.</li>
+            </ul>
+        </div>
+        <div class="card">
+            <h4>Water Resources Engineer Co-Op</h4>
+            <p>Civil and Environmental Consultants, Milford, OH | August 2023 - December 2023</p>
+            <ul>
+                <li>Automated data processing using advanced Excel techniques, streamlining calculations and enhancing decision-making for engineering projects.</li>
+                <li>Applied advanced data-driven techniques to floodplain analysis, hydraulic modeling, and 2D flood modeling using GeoHECRAS, ensuring accurate project assessments.</li>
+                <li>Designed cross-sections in AutoCAD Civil 3D, plotting over 80-page sheet sets, ensuring meticulous execution of complex construction projects.</li>
+            </ul>
+        </div>
+        <div class="card">
+            <h4>Process Engineer Co-Op</h4>
+            <p>Cremer North America, Cincinnati, OH | January 2023 - April 2023</p>
+            <ul>
+                <li>Engineered automated Excel VBA pivot tables to streamline data entry and analysis, reducing downtime reporting errors and improving accuracy.</li>
+                <li>Authored and maintained process validation documents (IQs, OQs, and PQs) for the installation of dye-flowmeters, ensuring compliance with engineering standards.</li>
+                <li>Coordinated and led multiple cross-functional meetings, facilitating successful completion of four projects in collaboration with Procter & Gamble.</li>
+            </ul>
+        </div>
+    </section>
 
-<section id="experience">
-    <h3>Experience</h3>
-    <div class="card">
-        <h4>Software Intern</h4>
-        <p>Valmonte Digital, (Remote) Los Angeles, CA | April 2024 - August 2024</p>
+    <!-- Education Section -->
+    <section id="education">
+        <h3>Education</h3>
+        <p><strong>Bachelor of Science, Computer Science</strong></p>
+        <p>University of Cincinnati, Cincinnati, OH</p>
+        <p>Expected Graduation: August 2026</p>
         <ul>
-            <li>Analyzed performance data from 5+ paid social and programmatic campaigns using SQL and Python, generating actionable insights that improved campaign efficiency.</li>
-            <li>Developed Python automation scripts for tasks such as bid adjustments and budget reallocation, reducing campaign management time by 8 hours weekly.</li>
-            <li>Created custom Google Data Studio dashboards to visualize key campaign metrics, providing media planners with insights to optimize strategies.</li>
+            <li>Honors and Awards: Darwin T. Turner Scholar, Buxbaum Workum Scholarship, Dean’s List 2023 and 2024</li>
         </ul>
-    </div>
-    <div class="card">
-        <h4>Water Resources Engineer Co-Op</h4>
-        <p>Civil and Environmental Consultants, Milford, OH | August 2023 - December 2023</p>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h3>Skills</h3>
+        <p>Technical: C++, C, Python, SQL, HTML, Oracle VM, AutoCAD, Microsoft Excel, LabVIEW</p>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h3>Projects</h3>
         <ul>
-            <li>Automated data processing using advanced Excel techniques, streamlining calculations and enhancing decision-making for engineering projects.</li>
-            <li>Applied advanced data-driven techniques to floodplain analysis, hydraulic modeling, and 2D flood modeling using GeoHECRAS, ensuring accurate project assessments.</li>
-            <li>Designed cross-sections in AutoCAD Civil 3D, plotting over 80-page sheet sets, ensuring meticulous execution of complex construction projects.</li>
+            <li>
+                <a href="https://github.com/HinnaP/takemeds-server" target="_blank">TakeMeds</a> 
+                - <strong>[Python & Flutter]</strong> A Python and Flutter-based mobile app developed to help users track prescription expiration dates and pharmacy refills. Winner of the Best AI Pitch at MidwestCon.
+            </li>
+            <li>
+                <a href="https://github.com/HinnaP/passwordgenerator" target="_blank">Password Generator</a> 
+                - <strong>[Python]</strong> A Python-based password generator that allows users to generate strong and secure passwords based on selected criteria like length, character types, and more.
+            </li>
+            <li>
+                <a href="https://github.com/HinnaP/TipCalculator/blob/main/File1" target="_blank">Tip Calculator</a> 
+                - <strong>[Python]</strong> A Python program that helps users calculate the tip and total amount based on the bill and tip percentage input.
+            </li>
+            <li>
+                <a href="https://github.com/HinnaP/BankingSystem/tree/main" target="_blank">Banking System</a> 
+                - <strong>[C++]</strong> A C++ project that simulates a basic banking system with functionalities like account creation, deposit, withdrawal, and balance checking.
+            </li>
         </ul>
-    </div>
-    <div class="card">
-        <h4>Process Engineer Co-Op</h4>
-        <p>Cremer North America, Cincinnati, OH | January 2023 - April 2023</p>
-        <ul>
-            <li>Engineered automated Excel VBA pivot tables to streamline data entry and analysis, reducing downtime reporting errors and improving accuracy.</li>
-            <li>Authored and maintained process validation documents (IQs, OQs, and PQs) for the installation of dye-flowmeters, ensuring compliance with engineering standards.</li>
-            <li>Coordinated and led multiple cross-functional meetings, facilitating successful completion of four projects in collaboration with Procter & Gamble.</li>
-        </ul>
-    </div>
-</section>
+    </section>
 
-<section id="education">
-    <h3>Education</h3>
-    <p><strong>Bachelor of Science, Computer Science</strong></p>
-    <p>University of Cincinnati, Cincinnati, OH</p>
-    <p>Expected Graduation: August 2026</p>
-    <ul>
-        <li>Honors and Awards: Darwin T. Turner Scholar, Buxbaum Workum Scholarship, Dean’s List 2023 and 2024</li>
-    </ul>
-</section>
+    <!-- Contact Section -->
+    <section id="contact">
+        <h3>Contact</h3>
+        <p>Email: <a href="mailto:parwezhs@ucmail.uc.edu">parwezhs@ucmail.uc.edu</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/hinna-parwez/" target="_blank">linkedin.com/in/hinna-parwez/</a></p>
+    </section>
 
-<section id="skills">
-    <h3>Skills</h3>
-    <p>Technical: C++, C, Python, SQL, HTML, Oracle VM, AutoCAD, Microsoft Excel, LabVIEW</p>
-</section>
+    <footer>
+        <p>&copy; 2024 Hinna Parwez. All Rights Reserved.</p>
+    </footer>
 
-<section id="projects">
-    <h3>Projects</h3>
-    <ul>
-        <li>
-            <a href="https://github.com/HinnaP/takemeds-server" target="_blank">TakeMeds</a> 
-            - <strong>[Python & Flutter]</strong> A Python and Flutter-based mobile app developed to help users track prescription expiration dates and pharmacy refills. Winner of the Best AI Pitch at MidwestCon.
-        </li>
-        <li>
-            <a href="https://github.com/HinnaP/passwordgenerator" target="_blank">Password Generator</a> 
-            - <strong>[Python]</strong> A Python-based password generator that allows users to generate strong and secure passwords based on selected criteria like length, character types, and more.
-        </li>
-        <li>
-            <a href="https://github.com/HinnaP/TipCalculator/blob/main/File1" target="_blank">Tip Calculator</a> 
-            - <strong>[Python]</strong> A Python program that helps users calculate the tip and total amount based on the bill and tip percentage input.
-        </li>
-        <li>
-            <a href="https://github.com/HinnaP/BankingSystem/tree/main" target="_blank">Banking System</a> 
-            - <strong>[C++]</strong> A C++ project that simulates a basic banking system with functionalities like account creation, deposit, withdrawal, and balance checking.
-        </li>
-    </ul>
-</section>
-
-<section id="contact">
-    <h3>Contact</h3>
-    <p>Email: <a href="mailto:parwezhs@ucmail.uc.edu">parwezhs@ucmail.uc.edu</a></p>
-    <p>LinkedIn: <a href="https://www.linkedin.com/in/hinna-parwez/" target="_blank">linkedin.com/in/hinna-parwez/</a></p>
-</section>
-
-<footer>
-    <p>&copy; 2024 Hinna Parwez. All Rights Reserved.</p>
-</footer>
-
+    <!-- JavaScript for Hamburger Menu -->
+    <script>
+        function toggleMenu() {
+            const navMenu = document.getElementById('nav-menu');
+            navMenu.classList.toggle('show');
+        }
+    </script>
 </body>
 </html>
