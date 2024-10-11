@@ -165,3 +165,54 @@ footer a {
 footer a:hover {
     text-decoration: underline;
 }
+
+/* Add the mobile-friendly styles here */
+
+/* Mobile-Friendly Styles */
+@media screen and (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin-bottom: 10px;
+    }
+
+    .header-content h1 {
+        font-size: 2em;
+    }
+
+    .header-content p {
+        font-size: 1em;
+    }
+}
+
+/* Extra small devices (phones, 600px and below) */
+@media screen and (max-width: 600px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    nav ul li a {
+        font-size: 1.2em;
+    }
+
+    .header-content h1 {
+        font-size: 1.8em;
+    }
+
+    .header-content p {
+        font-size: 0.9em;
+    }
+}
