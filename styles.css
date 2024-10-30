@@ -8,6 +8,23 @@ body {
     line-height: 1.6;
 }
 
+/* Typing Effect */
+.typing-effect {
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 0.15em solid #faf7f4;
+    animation: typing 3s steps(20, end), blink 0.7s step-end infinite;
+}
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+@keyframes blink {
+    50% { border-color: transparent; }
+}
+
 /* Navigation Styles */
 nav {
     background-color: #ffffff; 
@@ -66,36 +83,4 @@ header {
     margin: 10px 0;
 }
 
-/* Section Styles */
-section h3 {
-    font-size: 2em;
-    color: #0F2645;
-}
-
-/* Project Link Hover Effect */
-#projects ul li a {
-    position: relative;
-    display: inline-block;
-    transition: transform 0.3s ease, color 0.3s ease;
-    color: #0F2645;
-}
-
-#projects ul li a:hover {
-    transform: scale(1.05);
-    color: #FFD700;
-    text-decoration: underline;
-}
-
-/* Contact Section */
-#contact {
-    background-color: #0F2645;
-    color: #faf7f4;
-    padding: 20px 0;
-    border-radius: 0 0 10px 10px;
-}
-
-footer {
-    background-color: #0F2645;
-    color: #ffffff;
-    padding: 20px 0;
-}
+/* Additional Section and Footer Styles... */
