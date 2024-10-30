@@ -4,7 +4,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f9f9f9;
-    color: #0F2645; /* Updated to new blue color */
+    color: #0F2645;
     line-height: 1.6;
 }
 
@@ -18,10 +18,22 @@ nav {
     z-index: 1000;
 }
 
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 10px 20px; 
+}
+
 nav ul li a {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #0F2645; /* Updated to new blue color */
+    background-color: #0F2645;
     color: #ffffff;
     text-decoration: none;
     font-weight: 700;
@@ -31,13 +43,13 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background-color: #004080; 
+    background-color: #004080;
     color: #faf7f4;
 }
 
 /* Header Styles */
 header {
-    background-color: #0F2645; /* Updated to new blue color */
+    background-color: #0F2645;
     color: #faf7f4;
     text-align: center;
     padding: 100px 20px;
@@ -57,36 +69,33 @@ header {
 /* Section Styles */
 section h3 {
     font-size: 2em;
-    color: #0F2645; /* Updated to new blue color */
+    color: #0F2645;
 }
 
-/* Highlighted Text */
-#about p:last-of-type {
-    color: #0F2645; /* Updated to new blue color */
+/* Project Link Hover Effect */
+#projects ul li a {
+    position: relative;
+    display: inline-block;
+    transition: transform 0.3s ease, color 0.3s ease;
+    color: #0F2645;
+}
+
+#projects ul li a:hover {
+    transform: scale(1.05);
+    color: #FFD700;
+    text-decoration: underline;
 }
 
 /* Contact Section */
 #contact {
-    background-color: #0F2645; /* Updated to new blue color */
+    background-color: #0F2645;
     color: #faf7f4;
     padding: 20px 0;
     border-radius: 0 0 10px 10px;
 }
 
-#contact h3 {
-    color: #ffffff;
-}
-
-#contact a {
-    color: #ffffff;
-}
-
-#contact a:hover {
-    text-decoration: underline;
-}
-
-/* Footer Styles */
 footer {
-    background-color: #0F2645; /* Updated to new blue color */
+    background-color: #0F2645;
     color: #ffffff;
+    padding: 20px 0;
 }
