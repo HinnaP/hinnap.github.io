@@ -4,7 +4,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f9f9f9;
-    color: #0a0a33; /* Dark navy blue text */
+    color: #0F2645; /* Updated to new blue color */
     line-height: 1.6;
 }
 
@@ -18,23 +18,11 @@ nav {
     z-index: 1000;
 }
 
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-}
-
-nav ul li {
-    margin: 10px 20px; 
-}
-
 nav ul li a {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #0a0a33; 
-    color: #ffffff; /* White text */
+    background-color: #0F2645; /* Updated to new blue color */
+    color: #ffffff;
     text-decoration: none;
     font-weight: 700;
     font-size: 1.1em;
@@ -44,45 +32,13 @@ nav ul li a {
 
 nav ul li a:hover {
     background-color: #004080; 
-    color: #faf7f4; 
-}
-
-/* Hamburger Button (hidden on large screens) */
-.hamburger {
-    display: none;
-    font-size: 2em;
-    background: none;
-    border: none;
-    color: #0a0a33;
-    padding: 10px;
-    cursor: pointer;
-}
-
-@media screen and (max-width: 768px) {
-    nav ul {
-        flex-direction: column;
-        display: none; /* Hide menu by default on smaller screens */
-        background-color: #ffffff;
-        padding: 0;
-    }
-
-    nav ul.show {
-        display: flex; /* Show menu when .show class is added */
-    }
-
-    nav ul li {
-        margin: 10px 0;
-    }
-
-    .hamburger {
-        display: block; /* Show hamburger on smaller screens */
-    }
+    color: #faf7f4;
 }
 
 /* Header Styles */
 header {
-    background-color: #0a0a33; /* Dark navy blue background */
-    color: #faf7f4; /* Off-white text */
+    background-color: #0F2645; /* Updated to new blue color */
+    color: #faf7f4;
     text-align: center;
     padding: 100px 20px;
 }
@@ -99,85 +55,30 @@ header {
 }
 
 /* Section Styles */
-section {
-    margin: 40px auto;
-    padding: 30px;
-    max-width: 900px;
-    background-color: #ffffff; 
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
-    border-radius: 10px;
-    transition: transform 0.3s ease-in-out;
-    color: #0a0a33; /* text */
-}
-
-section:nth-of-type(odd) {
-    background-color: #f9f9f9; 
-}
-
-section:hover {
-    transform: translateY(-10px);
-}
-
 section h3 {
     font-size: 2em;
-    color: #004080; 
-    border-bottom: 2px solid #eeeeee; 
-    padding-bottom: 10px;
-    margin-bottom: 20px;
-    font-weight: bold;
+    color: #0F2645; /* Updated to new blue color */
 }
 
-section p, section ul {
-    font-size: 1.1em;
-    margin-bottom: 20px; 
-}
-
-section ul {
-    list-style-type: disc;
-    margin-left: 20px;
-}
-
-section ul li {
-    margin-bottom: 10px;
-}
-
-/* Highlighted Text for Co-Op Availability */
+/* Highlighted Text */
 #about p:last-of-type {
-    text-align: center;
-    margin-top: 40px;
-    font-weight: bold;
-    font-size: 1.2em;
-    color: #004080;
-}
-
-/* Horizontal Line/Divider */
-hr {
-    border: none;
-    height: 2px;
-    background-color: #eeeeee; 
+    color: #0F2645; /* Updated to new blue color */
 }
 
 /* Contact Section */
 #contact {
-    text-align: center;
-    background-color: #0a0a33; 
-    color: #faf7f4; /* Off-white */
+    background-color: #0F2645; /* Updated to new blue color */
+    color: #faf7f4;
     padding: 20px 0;
     border-radius: 0 0 10px 10px;
 }
 
 #contact h3 {
-    color: #ffffff; /* Change the 'Contact' heading to white */
-}
-
-#contact p {
-    margin: 10px 0;
+    color: #ffffff;
 }
 
 #contact a {
     color: #ffffff;
-    text-decoration: none;
-    font-weight: bold;
 }
 
 #contact a:hover {
@@ -186,18 +87,6 @@ hr {
 
 /* Footer Styles */
 footer {
-    text-align: center;
-    padding: 20px 0;
-    background-color: #0a0a33; 
-    color: #ffffff; 
-    font-size: 0.9em;
-}
-
-footer a {
-    color: #ffffff; 
-    text-decoration: none;
-}
-
-footer a:hover {
-    text-decoration: underline;
+    background-color: #0F2645; /* Updated to new blue color */
+    color: #ffffff;
 }
