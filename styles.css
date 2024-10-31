@@ -4,7 +4,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f9f9f9;
-    color: #0a0a33; /* Dark navy blue text */
+    color: #0F2645; /* Updated dark blue text */
     line-height: 1.6;
 }
 
@@ -33,7 +33,7 @@ nav ul li {
 nav ul li a {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #0a0a33; 
+    background-color: #0F2645; /* Updated to new blue */
     color: #ffffff; /* White text */
     text-decoration: none;
     font-weight: 700;
@@ -43,13 +43,13 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background-color: #004080; 
+    background-color: #004080; /* Slightly lighter blue on hover */
     color: #faf7f4; 
 }
 
 /* Header Styles */
 header {
-    background-color: #0a0a33; /* Dark navy blue background */
+    background-color: #0F2645; /* Updated to new blue */
     color: #faf7f4; /* Off-white text */
     text-align: center;
     padding: 100px 20px;
@@ -74,7 +74,7 @@ section {
     background-color: #ffffff; 
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
     border-radius: 10px;
-    color: #0a0a33; /* text */
+    color: #0F2645; /* Text color */
 }
 
 section:nth-of-type(odd) {
@@ -83,7 +83,7 @@ section:nth-of-type(odd) {
 
 section h3 {
     font-size: 2em;
-    color: #004080; 
+    color: #0F2645; /* Updated to new blue for section headings */
     border-bottom: 2px solid #eeeeee; 
     padding-bottom: 10px;
     margin-bottom: 20px;
@@ -107,7 +107,7 @@ section ul li {
 /* Contact Section */
 #contact {
     text-align: center;
-    background-color: #0a0a33; 
+    background-color: #0F2645; /* Updated to new blue */
     color: #faf7f4; /* Off-white */
     padding: 20px 0;
     border-radius: 0 0 10px 10px;
@@ -135,7 +135,7 @@ section ul li {
 footer {
     text-align: center;
     padding: 20px 0;
-    background-color: #0a0a33; 
+    background-color: #0F2645; /* Updated to new blue */
     color: #ffffff; 
     font-size: 0.9em;
 }
