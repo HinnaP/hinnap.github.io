@@ -8,8 +8,9 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
 </head>
 <body>
-    <!-- Navigation Menu -->
     <nav>
+        <!-- Hamburger menu button for mobile -->
+        <button class="hamburger" onclick="toggleMenu()">☰</button>
         <ul id="nav-menu">
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
@@ -21,10 +22,9 @@
         </ul>
     </nav>
 
-    <!-- Header Section -->
     <header id="home">
         <div class="header-content">
-            <h1><span class="typing-effect">PARWEZ</span></h1> <!-- Typing effect will start with "PARWEZ" -->
+            <h1>HINNA PARWEZ</h1>
             <p>Third-year Computer Science major at the University of Cincinnati, expected to graduate in August 2026.</p>
             <p>I am passionate about software, data science, as well as web development and related opportunities.</p>
         </div>
@@ -33,9 +33,9 @@
     <!-- About Section -->
     <section id="about">
         <h3>About Me</h3>
-        <p>I am a dedicated student with a passion for technology and problem-solving. I enjoy working on both front-end and back-end development, and I am constantly learning new techniques to improve my coding skills. Currently I am working on finishing up some personal Python projects that I will share here.</p>
+        <p>I am a dedicated student with a passion for technology and problem-solving. I enjoy working on both front-end and back-end development, and I am constantly learning new techniques to improve my coding skills. Currently I am working on finishing up some personal Python projects, that I will share here. </p>
         <hr style="margin: 30px 0;">
-        <p><strong style="font-size: 1.2em; color: #0F2645;">✨ Available for Co-Op Spring 2025 ✨</strong></p>
+        <p><strong style="font-size: 1.2em; color: #0F2645;"> Incoming Information Technology Co-op at Fischer Homes </strong></p>
     </section>
 
     <!-- Experience Section -->
@@ -121,16 +121,12 @@
         <p>&copy; 2024 Hinna Parwez. All Rights Reserved.</p>
     </footer>
 
-    <!-- JavaScript for Smooth Scroll -->
+    <!-- JavaScript for Hamburger Menu -->
     <script>
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
-                e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
-        });
+        function toggleMenu() {
+            const navMenu = document.getElementById('nav-menu');
+            navMenu.classList.toggle('show');
+        }
     </script>
 </body>
 </html>
