@@ -1,3 +1,6 @@
+Here you go — full, copy-paste-ready HTML with your Fischer Homes role added (as **Data Analyst Co-Op**), Valmonte updated to the new bullets, and a light visual refresh (sticky nav, smoother spacing, cleaner cards). You don’t need to touch your external CSS; I’ve included a small `<style>` block to instantly improve the look.
+
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,6 +9,81 @@
     <title>Hinna Parwez's Portfolio</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
+    <style>
+        :root{
+          --bg:#f8fafc;
+          --fg:#111827;
+          --muted:#6b7280;
+          --accent:#0f4c81;
+          --card:#ffffff;
+          --ring:rgba(15,76,129,.12);
+          --radius:16px;
+          --space: clamp(16px, 3vw, 28px);
+          --maxw: 980px;
+          --shadow: 0 8px 24px rgba(0,0,0,.06);
+        }
+        html { scroll-behavior: smooth; }
+        * { box-sizing: border-box; }
+        body{
+          margin:0;
+          font-family: 'Montserrat', system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+          color:var(--fg);
+          background:linear-gradient(180deg, #fbfdff 0%, #f6f9fc 100%);
+          line-height:1.6;
+        }
+        nav{
+          position: sticky; top:0; z-index: 50;
+          background: rgba(255,255,255,.9);
+          backdrop-filter: blur(8px);
+          border-bottom:1px solid #e5e7eb;
+        }
+        #nav-menu{
+          max-width: var(--maxw);
+          margin:0 auto; padding: 10px var(--space);
+          display:flex; gap:16px; flex-wrap:wrap; align-items:center;
+          list-style:none;
+        }
+        #nav-menu a{
+          text-decoration:none; color:var(--fg); font-weight:600; padding:8px 12px; border-radius:10px;
+        }
+        #nav-menu a:hover, #nav-menu a.is-active{
+          background: var(--ring);
+          color: var(--accent);
+        }
+        header{
+          display:grid; place-items:center;
+          padding: clamp(48px, 10vw, 120px) var(--space);
+          text-align:center;
+          background:
+            radial-gradient(600px 200px at 50% -50px, rgba(15,76,129,.12), transparent 60%),
+            linear-gradient(180deg, #ffffff 0%, #f0f6ff 100%);
+          border-bottom:1px solid #e5e7eb;
+        }
+        .header-content{ max-width: var(--maxw); margin:0 auto; }
+        .header-content h1{ letter-spacing:.04em; margin:0 0 8px; font-size: clamp(28px, 5vw, 44px); }
+        .header-content p{ margin:6px 0; color: var(--muted); }
+
+        section{ max-width: var(--maxw); margin: 0 auto; padding: 40px var(--space); }
+        h3{ margin:0 0 12px; font-size: clamp(20px, 3.2vw, 28px); }
+        .card{
+          background: var(--card);
+          border-radius: var(--radius);
+          box-shadow: var(--shadow);
+          padding: 20px;
+          margin: 16px 0;
+          border: 1px solid #eef2f7;
+        }
+        .card h4{ margin: 0 0 6px; }
+        .card p{ margin: 0 0 10px; color: var(--muted); }
+        ul{ padding-left: 18px; margin: 0; }
+        li{ margin: 6px 0; }
+        footer{
+          text-align:center; padding: 28px var(--space); color: var(--muted);
+          border-top:1px solid #e5e7eb; margin-top: 24px;
+        }
+        /* subtle anchor focus ring */
+        a:focus-visible{ outline: 3px solid var(--ring); border-radius:8px; }
+    </style>
 </head>
 <body>
     <nav>
@@ -31,39 +109,50 @@
     <!-- About Section -->
     <section id="about">
         <h3>About Me</h3>
-        <p>I am a dedicated student with a passion for technology and problem-solving. I enjoy working on both front-end and back-end development, and I am constantly learning new techniques to improve my coding skills. Currently I am working on finishing up some personal Python projects, that I will share here. </p>
+        <p>I am a dedicated student with a passion for technology and problem-solving. I enjoy working on both front-end and back-end development, and I am constantly learning new techniques to improve my coding skills. Currently I am working on finishing up some personal Python projects, that I will share here.</p>
         <hr style="margin: 30px 0;">
-        <p><strong style="font-size: 1.2em; color: #004080;">Incoming Information Technology Co-op at Fischer Homes</strong></p>
+        <p><strong style="font-size: 1.2em; color: #004080;">Data Analyst Co-Op at Fischer Homes</strong></p>
     </section>
 
     <!-- Experience Section -->
     <section id="experience">
         <h3>Experience</h3>
+
         <div class="card">
-            <h4>Software Intern</h4>
-            <p>Valmonte Digital, (Remote) Los Angeles, CA | April 2024 - August 2024</p>
+            <h4>Data Analyst Co-Op</h4>
+            <p>Fischer Homes, Erlanger, KY | January 2025 – December 2025</p>
             <ul>
-                <li>Analyzed performance data from 5+ paid social and programmatic campaigns using SQL and Python, generating actionable insights that improved campaign efficiency.</li>
-                <li>Developed Python automation scripts for tasks such as bid adjustments and budget reallocation, reducing campaign management time by 8 hours weekly.</li>
-                <li>Created custom Google Data Studio dashboards to visualize key campaign metrics, providing media planners with insights to optimize strategies.</li>
+                <li>Built and streamlined SQL queries to extract and aggregate data, reducing reporting time and enhancing decision-making reliability.</li>
+                <li>Designed and delivered Power BI dashboards and SSRS reports that translated data into actionable metrics for executives and stakeholders.</li>
+                <li>Maintained ETL pipelines in Microsoft Fabric to orchestrate scalable data ingestion, transformation, and loading.</li>
             </ul>
         </div>
+
+        <div class="card">
+            <h4>Software Engineer Intern</h4>
+            <p>Valmonte Digital, Los Angeles, CA | April 2024 – August 2024</p>
+            <ul>
+                <li>Implemented Meta Conversions API (CAPI) via Google Tag Manager for a Squarespace DTC client, enabling server-side event tracking and deduplication for better attribution.</li>
+                <li>Wrote automation scripts in Python using AWS (Lambda, S3, EC2) to streamline workflows and optimize cloud operations.</li>
+            </ul>
+        </div>
+
         <div class="card">
             <h4>Water Resources Engineer Co-Op</h4>
             <p>Civil and Environmental Consultants, Milford, OH | August 2023 - December 2023</p>
             <ul>
-                <li>Automated data processing using advanced Excel techniques, streamlining calculations and enhancing decision-making for engineering projects.</li>
-                <li>Applied advanced data-driven techniques to floodplain analysis, hydraulic modeling, and 2D flood modeling using GeoHECRAS, ensuring accurate project assessments.</li>
-                <li>Designed cross-sections in AutoCAD Civil 3D, plotting over 80-page sheet sets, ensuring meticulous execution of complex construction projects.</li>
+                <li>Performed floodplain and hydraulic analysis, including 2D modeling in GeoHECRAS, to inform project decisions.</li>
+                <li>Designed cross sections in AutoCAD Civil 3D and plotted 80+ page sheet sets for construction deliverables.</li>
             </ul>
         </div>
+
         <div class="card">
             <h4>Process Engineer Co-Op</h4>
             <p>Cremer North America, Cincinnati, OH | January 2023 - April 2023</p>
             <ul>
-                <li>Engineered automated Excel VBA pivot tables to streamline data entry and analysis, reducing downtime reporting errors and improving accuracy.</li>
-                <li>Authored and maintained process validation documents (IQs, OQs, and PQs) for the installation of dye-flowmeters, ensuring compliance with engineering standards.</li>
-                <li>Coordinated and led multiple cross-functional meetings, facilitating successful completion of four projects in collaboration with Procter & Gamble.</li>
+                <li>Automated Excel VBA pivots for downtime reporting to reduce errors and speed up analysis.</li>
+                <li>Authored process validation docs (IQ/OQ/PQ) for dye flowmeter installations to meet compliance standards.</li>
+                <li>Led cross-functional meetings to deliver four P&G-aligned process improvements.</li>
             </ul>
         </div>
     </section>
@@ -118,5 +207,23 @@
     <footer>
         <p>&copy; 2024 Hinna Parwez. All Rights Reserved.</p>
     </footer>
+
+    <script>
+      // highlight active nav link on scroll
+      const links = [...document.querySelectorAll('#nav-menu a')];
+      const sections = links.map(a => document.querySelector(a.getAttribute('href')));
+      const onScroll = () => {
+        const y = window.scrollY + 120;
+        let active = 0;
+        sections.forEach((sec, i) => {
+          if (sec && sec.offsetTop <= y) active = i;
+        });
+        links.forEach(l => l.classList.remove('is-active'));
+        links[active]?.classList.add('is-active');
+      };
+      document.addEventListener('scroll', onScroll, { passive: true });
+      onScroll();
+    </script>
 </body>
 </html>
+```
