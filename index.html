@@ -6,81 +6,107 @@
     <title>Hinna Parwez's Portfolio</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
-    <style>
-        :root{
-          --bg:#f8fafc;
-          --fg:#111827;
-          --muted:#6b7280;
-          --accent:#0f4c81;
-          --card:#ffffff;
-          --ring:rgba(15,76,129,.12);
-          --radius:16px;
-          --space: clamp(16px, 3vw, 28px);
-          --maxw: 980px;
-          --shadow: 0 8px 24px rgba(0,0,0,.06);
-        }
-        html { scroll-behavior: smooth; }
-        * { box-sizing: border-box; }
-        body{
-          margin:0;
-          font-family: 'Montserrat', system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-          color:var(--fg);
-          background:linear-gradient(180deg, #fbfdff 0%, #f6f9fc 100%);
-          line-height:1.6;
-        }
-        nav{
-          position: sticky; top:0; z-index: 50;
-          background: rgba(255,255,255,.9);
-          backdrop-filter: blur(8px);
-          border-bottom:1px solid #e5e7eb;
-        }
-        #nav-menu{
-          max-width: var(--maxw);
-          margin:0 auto; padding: 10px var(--space);
-          display:flex; gap:16px; flex-wrap:wrap; align-items:center;
-          list-style:none;
-        }
-        #nav-menu a{
-          text-decoration:none; color:var(--fg); font-weight:600; padding:8px 12px; border-radius:10px;
-        }
-        #nav-menu a:hover, #nav-menu a.is-active{
-          background: var(--ring);
-          color: var(--accent);
-        }
-        header{
-          display:grid; place-items:center;
-          padding: clamp(48px, 10vw, 120px) var(--space);
-          text-align:center;
-          background:
-            radial-gradient(600px 200px at 50% -50px, rgba(15,76,129,.12), transparent 60%),
-            linear-gradient(180deg, #ffffff 0%, #f0f6ff 100%);
-          border-bottom:1px solid #e5e7eb;
-        }
-        .header-content{ max-width: var(--maxw); margin:0 auto; }
-        .header-content h1{ letter-spacing:.04em; margin:0 0 8px; font-size: clamp(28px, 5vw, 44px); }
-        .header-content p{ margin:6px 0; color: var(--muted); }
+   <style>
+  :root{
+    /* unified, accessible palette */
+    --bg:#f9fafb;                 /* page background */
+    --fg:#0f172a;                 /* primary text (slate-900) */
+    --muted:#475569;              /* secondary text (slate-600) */
+    --accent:#1e3a8a;             /* single accent (indigo-900) */
+    --accent-weak:#e0e7ff;        /* light indigo for hovers/chips */
+    --card:#ffffff;
+    --ring:rgba(30,58,138,.14);   /* indigo-900 at low alpha */
+    --radius:16px;
+    --space: clamp(16px, 3vw, 28px);
+    --maxw: 980px;
+    --shadow: 0 8px 24px rgba(2,6,23,.06);
+  }
 
-        section{ max-width: var(--maxw); margin: 0 auto; padding: 40px var(--space); }
-        h3{ margin:0 0 12px; font-size: clamp(20px, 3.2vw, 28px); }
-        .card{
-          background: var(--card);
-          border-radius: var(--radius);
-          box-shadow: var(--shadow);
-          padding: 20px;
-          margin: 16px 0;
-          border: 1px solid #eef2f7;
-        }
-        .card h4{ margin: 0 0 6px; }
-        .card p{ margin: 0 0 10px; color: var(--muted); }
-        ul{ padding-left: 18px; margin: 0; }
-        li{ margin: 6px 0; }
-        footer{
-          text-align:center; padding: 28px var(--space); color: var(--muted);
-          border-top:1px solid #e5e7eb; margin-top: 24px;
-        }
-        /* subtle anchor focus ring */
-        a:focus-visible{ outline: 3px solid var(--ring); border-radius:8px; }
-    </style>
+  html { scroll-behavior: smooth; }
+  * { box-sizing: border-box; }
+  body{
+    margin:0;
+    font-family: 'Montserrat', system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+    color:var(--fg);
+    background: var(--bg);
+    line-height:1.6;
+  }
+
+  /* NAV */
+  nav{
+    position: sticky; top:0; z-index: 50;
+    background: rgba(255,255,255,.92);
+    backdrop-filter: blur(8px);
+    border-bottom:1px solid #e5e7eb;
+  }
+  #nav-menu{
+    max-width: var(--maxw);
+    margin:0 auto; padding: 10px var(--space);
+    display:flex; gap:16px; flex-wrap:wrap; align-items:center;
+    list-style:none;
+  }
+  #nav-menu a{
+    text-decoration:none; color:var(--fg); font-weight:700;
+    padding:8px 12px; border-radius:12px; transition:.15s ease;
+  }
+  #nav-menu a:hover,
+  #nav-menu a.is-active{
+    background: var(--accent-weak);
+    color: var(--accent);
+  }
+
+  /* HEADER — softer, non-competing gradient */
+  header{
+    display:grid; place-items:center;
+    padding: clamp(48px, 10vw, 120px) var(--space);
+    text-align:center;
+    background:
+      radial-gradient(800px 240px at 50% -120px, rgba(30,58,138,.10), transparent 60%),
+      linear-gradient(180deg, #ffffff 0%, #f5f7fb 100%);
+    border-bottom:1px solid #e5e7eb;
+  }
+  .header-content{ max-width: var(--maxw); margin:0 auto; }
+  .header-content h1{
+    letter-spacing:.04em; margin:0 0 8px;
+    font-size: clamp(28px, 5vw, 44px);
+    color: var(--accent);
+  }
+  .header-content p{ margin:6px 0; color: var(--muted); }
+
+  /* SECTIONS/CARDS */
+  section{ max-width: var(--maxw); margin: 0 auto; padding: 40px var(--space); }
+  h3{ margin:0 0 12px; font-size: clamp(20px, 3.2vw, 28px); color:var(--fg); }
+  .card{
+    background: var(--card);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    padding: 20px;
+    margin: 16px 0;
+    border: 1px solid #eef2f7;
+  }
+  .card h4{ margin: 0 0 6px; color:var(--fg); }
+  .card p{ margin: 0 0 10px; color: var(--muted); }
+  ul{ padding-left: 18px; margin: 0; }
+  li{ margin: 6px 0; }
+
+  /* links + focus */
+  a{ color: var(--accent); }
+  a:hover{ opacity:.9; }
+  a:focus-visible{ outline: 3px solid var(--accent-weak); border-radius:8px; }
+
+  footer{
+    text-align:center; padding: 28px var(--space); color: var(--muted);
+    border-top:1px solid #e5e7eb; margin-top: 24px;
+  }
+
+  /* optional: respect dark mode a bit without full redesign */
+  @media (prefers-color-scheme: dark){
+    :root{ --bg:#0b1020; --fg:#f8fafc; --muted:#cbd5e1; --card:#0f172a; --accent-weak:rgba(99,102,241,.18); --shadow: 0 8px 24px rgba(0,0,0,.35); }
+    nav{ background: rgba(15,23,42,.8); border-bottom-color:#1f2937; }
+    header{ border-bottom-color:#1f2937; }
+    .card{ border-color:#1f2937; }
+  }
+</style>
 </head>
 <body>
     <nav>
